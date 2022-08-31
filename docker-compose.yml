@@ -1,0 +1,11 @@
+version: "3.7"
+
+services:
+  egress:
+    image: eyevinntechnology/wrtc-whpp:latest
+    network_mode: "host"
+    environment:
+      - PORT=8200
+      - EXT_PORT=8200
+      - HOSTNAME=localhost
+      - SMB_URL=http://<SMB-HOST>:8280/conferences/
