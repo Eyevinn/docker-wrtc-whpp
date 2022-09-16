@@ -15,6 +15,7 @@ services:
       - PORT=8200
       - EXT_PORT=8200
       - SMB_URL=http://<SMB-HOST>:8280/conferences/
+      - SMB_API_KEY=example
 ```
 
 ## Configuration
@@ -25,4 +26,5 @@ Default configuration can be changed by setting these environment variables:
 - `HOSTNAME`
 - `USE_HTTPS`
 - `SMB_URL`
+- `SMB_API_KEY`
 - `PREFIX` (default is `/whpp`)
